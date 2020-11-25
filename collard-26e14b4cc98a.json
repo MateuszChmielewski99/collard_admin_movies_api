@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "collard",
+  "private_key_id": "26e14b4cc98a4b9216256c3fcd9c3153d176677b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDefd5CE9LmhoAs\nZXZX6m5Q/SNKedXYEFqOxozlQQCanCrbWXodxu7mcCvkXhporC/dJrqgadzkptdI\nhEYgv7/9xs2eajs79rYrbyWmFH8Yh6xiHxI+0PzJC4WJbDQwVDLwZkdF/kKDaGWu\nZFT/UpNQoh9ida3HN7x22yp0/gp7SqBz4XywExxPzZqX/lXw+YctG0yakpoYoeL7\nenf89AmlVwE2GlJ9O6zfeCWHX2skN+vStA/99EQECOUGRgzdgUzGO/VySftxYwP9\nI8Vt3RIdPyD7dPK+4bESrSsEqaSEeCTp3cUFsoB9FqqQIXryuzK6mAyJls+gxXnJ\n9T9XF/OtAgMBAAECggEALGvjffxgwXttqE+KqQNqipt72hEIt8aOGg78zwHjKbtP\n2DMdbUgMZzBSpxn9ulPUi5pBrSjtvC4ucfFM4hl+rt+sKnqJwI9hsDrVALt7Y62k\n5oNPHIET010MSJN0uQh6kiJNjSU2aO+lS4QHL2HwfSsdSoZ1z35qj61y5OBaveIZ\nOH3pSfsaIyHxXfzwxqzCJqgLOOcxQv947Jmc1Jd/5tFJ1q6K9awS+/UjvZOfPrnm\n+bTSE3au8RTi7kznfrpMoemGNPhGJPjroOaRJBc7Kxs8UP2LCPOeV/yYNLZBqabL\nSuKQlDuRgLvrOmB/UczlqXDoNElP7XblhWU65qoycQKBgQD+T8nv/eXEn9ymR2Kd\n6z37M3CfV/x1hAtG6l8+Qf3NoqUUNp42lxe8oA2wY9vkg8TZhfzyQiiTBuG07DO3\nXbbOfBsqOKC2qB4spRiGM5GgbE4GD8fCXi0WUJQi/kV3vaIgpP3fX5MoRiPwxVU6\nXvA6gnEsC2rj0ZZqY0E8vpA3MQKBgQDf+AAOfaDYff7nbs4r0u6Ze0PHP3828/E/\n8xpitaiCNmQknITOwX1y9tLCIbEqB5tRMD9nVKUqUcdnSlYSOSHKBAZFgA46+/1B\ns5LnQG5GKuuR4TUNEsBn9MvR9OaxogzaV9htzdYFYt4f8tyxTbtqlpvzGZz/Ef78\nJMybZg5dPQKBgQD+S9C0z2D7jZM5HjapjLqsvtJGM9g5tnEEV4YnnhtpjdKedMMd\n+VX+AtnNYP1X8r9beBToNmmWI5J8tJg+KlKLBSSwwnFKVK/fmrL8NwLOtJ4Mh6kL\nXdqd7rNCjpnuU0yUcgd+XnarFgAIWXqQ5LA5AYijL0OSTVioR1nLoQ5acQKBgQDB\nJ1ilJqM5EjBr15vnH5q2sx/ZDmHgOrGsvTPcPV5+LfpfuLywsx5Fr6hD1Fq+LKE+\ne6Wyr8VhofWelvVz8eG6H45pEe8z326i4wOmfGKeERXoUZk3FRzqiqvc/qCWQXNk\nOq5kxEf3jTSTyRebsbYYTptgJI7JS/Pj8LikrHdm4QKBgEDN4wGv6GmqJzt4Sr2F\nlXyVsq1w7FjwAy2LesIc60D4oi64V6rdsLxWflZ9YSvGuZCXJWRuW19OxrX5BHVT\n+1o5IQ5j2k8ZojjLjTS42r1hxonURyMplGeX3qJI1lw/78aBv6QNZ9+NsiXW574/\n/OflIL77ZZZEvwGRTwYn/SBD\n-----END PRIVATE KEY-----\n",
+  "client_email": "collard-files@collard.iam.gserviceaccount.com",
+  "client_id": "110711899754113352522",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/collard-files%40collard.iam.gserviceaccount.com"
+}

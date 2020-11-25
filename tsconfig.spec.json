@@ -1,0 +1,10 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "module": "ESNext",
+      "target": "ES2019",
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true
+
+    }
+  }

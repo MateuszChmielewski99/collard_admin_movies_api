@@ -1,0 +1,80 @@
+[
+  {
+    "Name": "Toy Story",
+    "ImdbScore": 8.3,
+    "Year": 1995,
+    "Genres": ["Animation", "Adventure", "Comedy"],
+    "Director": {
+      "Id": "5f99b8d51be9fb539cfb600b",
+      "Name": "John Lasseter"
+    },
+    "LeadingActors": [
+      {
+        "Id": "5f99b8d51be9fb539cfb706c",
+        "Name": "Tom Hanks"
+      },
+      {
+        "Id": "5f99b971692f534854730103",
+        "Name": "Tim Allen"
+      },
+      {
+        "Id": "5f9b1d0917ed5fca5f5cc309",
+        "Name": "Don Rickles"
+      }
+    ],
+    "ImagesUrls": [],
+    "ImdbLink": "http://www.imdb.com/title/tt0114709"
+  },
+  {
+    "Name": "Jumanji",
+    "ImdbScore": 6.9,
+    "Year": 1995,
+    "Genres": ["Action", "Adventure", "Family"],
+    "Director": {
+      "Id": "5f99b8d51be9fb539cfb600c",
+      "Name": "Joe Johnston"
+    },
+    "LeadingActors": [
+      {
+        "Id": "5f99b971692f5348547300a2",
+        "Name": "Robin Williams"
+      },
+      {
+        "Id": "5f99b971692f534854730223",
+        "Name": "Kirsten Dunst"
+      },
+      {
+        "Id": "5f99b971692f53485473016b",
+        "Name": "Bonnie Hunt"
+      }
+    ],
+    "ImagesUrls": [],
+    "ImdbLink": "http://www.imdb.com/title/tt0113497"
+  },
+  {
+    "Name": "Waiting to Exhale",
+    "ImdbScore": 5.7,
+    "Year": 1995,
+    "Genres": ["Comedy", "Drama", "Romance"],
+    "Director": {
+      "Id": "5f99b8d51be9fb539cfb600d",
+      "Name": "Forest Whitaker"
+    },
+    "LeadingActors": [
+      {
+        "Id": "5f99b971692f5348547300a3",
+        "Name": "Whitney Houston"
+      },
+      {
+        "Id": "5f99b8d51be9fb539cfb6f14",
+        "Name": "Angela Bassett"
+      },
+      {
+        "Id": "5f9b1fb390535be72338842b",
+        "Name": "Loretta Devine"
+      }
+    ],
+    "ImagesUrls": [],
+    "ImdbLink": "http://www.imdb.com/title/tt0114885"
+  }
+]
