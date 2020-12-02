@@ -20,6 +20,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '12.18.0'
       
       - name: Yarn CLI  
         uses: CultureHQ/actions-yarn@v1.0.1
