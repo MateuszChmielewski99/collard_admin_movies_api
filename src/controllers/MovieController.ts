@@ -15,8 +15,9 @@ import {
 } from '../factories/ValidationErrorResponse.factory';
 import { UpdateMovieHandler } from '../handlers/UpdateMovie.handler';
 import { IImageDao } from '../dao/IImageDao';
-import { GcImageDao } from '../dao/GcImageDao';
+import { AwsImageDao } from '../dao/AwsImageDao';
 import multer from 'multer';
+import cors from 'cors';
 
 const upload = multer({
   storage: multer.memoryStorage(),
@@ -102,16 +103,19 @@ const getPagedResult = async (req: Request, res: Response) => {
 };
 
 const uploadImage = async (req: Request, res: Response) => {
-  const dao: IImageDao = container.resolve(GcImageDao);
+  const dao: IImageDao = container.resolve(AwsImageDao);
   const casted = req.files as Express.Multer.File[];
+  console.log(req.files);
   try {
     const response = await dao.upload(casted);
     res.send(response);
   } catch (e) {
+    console.log(e);
     res.status(400).send(e);
   }
 };
 
+MovieRouter.use(cors({ origin: '*', allowedHeaders: '*', methods: 'any' }));
 MovieRouter.get('/', getMovie);
 MovieRouter.delete('/delete', deleteMovie);
 MovieRouter.put('/update', updateMovie);

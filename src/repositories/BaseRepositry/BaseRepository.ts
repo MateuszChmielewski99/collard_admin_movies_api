@@ -53,11 +53,11 @@ export class BaseRepository<T extends { _id?: string }> {
   }
 
   public async getOne(id: ObjectId) {
-    let result = undefined;
+    let result: T | null = undefined || null;
     try {
       await this.client.connect();
       const db = this.client.db();
-      result = await db.collection(this.collectionName).findOne({ _id: id });
+      result = await db.collection(this.collectionName).findOne<T>({ _id: id });
     } catch (e) {
       console.error(e);
     }
@@ -78,7 +78,7 @@ export class BaseRepository<T extends { _id?: string }> {
   }
 
   public async getByQuery(query: FilterQuery<T>) {
-    let result = undefined;
+    let result: any[] = [];
     try {
       const db = this.client.db();
       result = await db
@@ -125,18 +125,10 @@ export class BaseRepository<T extends { _id?: string }> {
   }
 
   private getConnectionUri = () => {
-    const envVars = dotenv.config({ path: 'src/.env' });
     const connectionUri =
       'mongodb+srv://BonuzAdmin:<password>@collard.1i3y6.mongodb.net/<dbname>?retryWrites=true&w=majority';
     return connectionUri
-      .replace(
-        '<password>',
-        (envVars.parsed?.MONGO_PASSWORD as string) ||
-          (process.env.MONGO_PASSWORD as string)
-      )
-      .replace(
-        '<dbname>',
-        (envVars.parsed?.DBNAME as string) || (process.env.DBNAME as string)
-      );
+      .replace('<password>', process.env.MONGO_PASSWORD as string)
+      .replace('<dbname>', process.env.DBNAME as string);
   };
 }

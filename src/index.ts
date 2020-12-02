@@ -1,5 +1,5 @@
 import 'reflect-metadata';
-import express, { Application } from 'express';
+import express, { Application, Request, Response } from 'express';
 import { bootstrap } from './container-setup';
 import MovieRouter from './controllers/MovieController';
 import * as bodyParser from 'body-parser';
@@ -12,6 +12,12 @@ const app: Application = express();
 app.use(bodyParser.json());
 app.use('/movie', MovieRouter);
 
-app.listen(5050, () => console.log('App and running'));
+app.get('/',(_req:Request, resp:Response) => {
+    return resp.sendStatus(200);
+})
+
+const port = process.env.PORT || 5050;
+
+app.listen(port, () => console.log('App and running on port ' + port));
 
 export default app;

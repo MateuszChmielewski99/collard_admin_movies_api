@@ -3,7 +3,7 @@ import { CollectionAggregationOptions, FilterQuery, ObjectId } from 'mongodb';
 export interface IBaseRepository<T> {
   create(entity: T): Promise<void>;
   update(entity: T): Promise<void>;
-  getOne(id: ObjectId): Promise<T | undefined>;
+  getOne(id: ObjectId): Promise<T | null>;
   deleteOne(id: ObjectId): Promise<void>;
   getByQuery(query: FilterQuery<T>): Promise<T[] | undefined>;
   insertMany(data: T[]): Promise<void>;

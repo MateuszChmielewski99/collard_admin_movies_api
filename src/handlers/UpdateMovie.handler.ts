@@ -2,7 +2,7 @@ import {
   UpdateMovieRequest,
   validateUpdateMovieRequest,
 } from 'collard_admin_models';
-import { GcImageDao } from '../dao/GcImageDao';
+import { AwsImageDao } from '../dao/AwsImageDao';
 import { IImageDao } from '../dao/IImageDao';
 import { container, inject, injectable } from 'tsyringe';
 import { createAjvValidationErrorResponse } from '../factories/ValidationErrorResponse.factory';
@@ -17,7 +17,7 @@ export class UpdateMovieHandler {
     request: UpdateMovieRequest
   ): Promise<OperationRersult> {
     const validationResul = validateUpdateMovieRequest(request);
-    const imageDao: IImageDao = container.resolve(GcImageDao);
+    const imageDao: IImageDao = container.resolve(AwsImageDao);
 
     const movie = await this.service.getById(request.id);
 
