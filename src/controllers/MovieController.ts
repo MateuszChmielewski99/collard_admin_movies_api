@@ -115,7 +115,6 @@ const uploadImage = async (req: Request, res: Response) => {
   }
 };
 
-MovieRouter.use(cors({ origin: '*', allowedHeaders: '*', methods: 'any' }));
 MovieRouter.get('/', getMovie);
 MovieRouter.delete('/delete', deleteMovie);
 MovieRouter.put('/update', updateMovie);

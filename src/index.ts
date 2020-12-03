@@ -4,17 +4,19 @@ import { bootstrap } from './container-setup';
 import MovieRouter from './controllers/MovieController';
 import * as bodyParser from 'body-parser';
 import dotenv from 'dotenv';
+import cors from 'cors';
 
 dotenv.config();
 bootstrap();
 
 const app: Application = express();
+app.use(cors({ origin: '*', allowedHeaders: '*', methods: 'any' }));
 app.use(bodyParser.json());
 app.use('/movie', MovieRouter);
 
-app.get('/',(_req:Request, resp:Response) => {
-    return resp.sendStatus(200);
-})
+app.get('/', (_req: Request, resp: Response) => {
+  return resp.sendStatus(200);
+});
 
 const port = process.env.PORT || 5050;
 

@@ -10,7 +10,7 @@ export class AwsImageDao implements IImageDao {
       bucketName: 'collardimages',
       region: 'us-east-2',
       accessKeyId: process.env.AWS_ACCESS_KEY,
-      secretAccessKey:process.env.AWS_SECRET,
+      secretAccessKey: process.env.AWS_SECRET,
     };
     this.s3Client = new S3(config);
   }
@@ -26,7 +26,7 @@ export class AwsImageDao implements IImageDao {
 
   async delete(urls: string[]): Promise<void> {
     for (const url of urls) {
-        await this.s3Client.deleteFile(url);
+      await this.s3Client.deleteFile(url);
     }
   }
 }
