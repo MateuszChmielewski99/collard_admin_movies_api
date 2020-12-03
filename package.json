@@ -8,7 +8,7 @@
     "src"
   ],
   "engines": {
-    "node": "14 >="
+    "node": "12.18.0"
   },
   "scripts": {
     "seedMovie": "ts-node src/seed/movie/movie_seed.ts",
